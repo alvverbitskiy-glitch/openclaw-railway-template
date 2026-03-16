@@ -11,4 +11,7 @@ fi
 rm -rf /home/linuxbrew/.linuxbrew
 ln -sfn /data/.linuxbrew /home/linuxbrew/.linuxbrew
 
+# Start agent-browser in background
+agent-browser --cdp 9222 &
+
 exec gosu openclaw node src/server.js
