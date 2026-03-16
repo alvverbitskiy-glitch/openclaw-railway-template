@@ -9,6 +9,29 @@ RUN apt-get update \
     python3 \
     build-essential \
     zip \
+    libnspr4 \
+    libnss3 \
+    libgtk-3-0 \
+    libx11-6 \
+    libxcomposite1 \
+    libasound2 \
+    libxrandr2 \
+    libxcb-shm0 \
+    libxcb1 \
+    libxext6 \
+    libgdk-pixbuf-2.0-0 \
+    libatk1.0-0 \
+    libcairo2 \
+    libfreetype6 \
+    libfontconfig1 \
+    libdbus-1-3 \
+    libatk-bridge2.0-0 \
+    libdrm2 \
+    libxkbcommon0 \
+    libatspi2.0-0 \
+    libcups2 \
+    libxshmfence1 \
+    libgbm1 \
   && rm -rf /var/lib/apt/lists/*
 RUN npm install -g openclaw@2026.3.13 clawhub@latest agent-browser
 RUN agent-browser install --with-deps || true
