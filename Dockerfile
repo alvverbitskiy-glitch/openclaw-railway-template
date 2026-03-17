@@ -1,5 +1,5 @@
 FROM node:22.19.0-bookworm
-RUN echo "v4" && apt-get update \
+RUN echo "v6" && apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
